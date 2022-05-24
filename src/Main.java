@@ -47,9 +47,15 @@ public class Main {
         float averageSum = 0;
         for (int i = 0; i < arr.length; i++) {
             averageSum = sum / arr.length;
-             System.out.println("averageSum expense in a month" + averageSum + "rubles");}}}
+        }
+        System.out.println("averageSum expense in a month" + averageSum + "rubles");
+        System.out.println();
 
 
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i =  reverseFullName.length -1; i>=0; i--) {
+        System.out.print(reverseFullName[i]);
+        System.out.println();}}}
 
 
 
