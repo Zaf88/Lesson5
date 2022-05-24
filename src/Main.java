@@ -9,10 +9,10 @@ public class Main {
         }
         return arr;
     }
-    static int[] arr = generateRandomArray();
+
 
     public static void main(String[] args) {
-
+        int[] arr = generateRandomArray();
         System.out.println("Task 1");
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -21,11 +21,38 @@ public class Main {
         System.out.println("The sum of all expenses in a month" + sum + "rubles");
 
 
-        int[] arr = new int[30];
-             int maxSum = 100;
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = (100_000) + 100_000;
-             if (arr[i] > maxSum) {
-                 maxSum = arr[i];
-             }}
-        System.out.println(maxSum ++);}}
+        int Sum = 0;
+        int maxSum = 200_000;
+        int minSum = 100_000;
+        for (int i = 0; i < arr.length; i++) {
+            int a = arr[i];
+            Sum += a;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            int j = arr[i];
+            if (j >= maxSum) {
+                maxSum = j;
+            }
+        }
+        System.out.println("Maximum expense in a day" + maxSum + "rubles");
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] <= minSum) {
+                minSum = arr[i];
+            }
+        }
+        System.out.print("Minimum expense in a day" + minSum + "rubles");
+
+
+        float averageSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            averageSum = sum / arr.length;
+             System.out.println("averageSum expense in a month" + averageSum + "rubles");}}}
+
+
+
+
+
+
+
+
