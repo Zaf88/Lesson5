@@ -22,26 +22,26 @@ public class Main {
 
 
         int Sum = 0;
-        int maxSum = 200_000;
-        int minSum = 100_000;
+        int Sum1 = 200_000;
+        int Sum2 = 100_000;
         for (int i = 0; i < arr.length; i++) {
             int a = arr[i];
             Sum += a;
         }
         for (int i = 0; i < arr.length; i++) {
             int j = arr[i];
-            if (j >= maxSum) {
-                maxSum = j;
+            if (j >= Sum1) {
+                Sum1 = j;
             }
         }
-        System.out.println("Maximum expense in a day" + maxSum + "rubles");
+        System.out.println("Maximum expense in a day" + Sum1 + "rubles");
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] <= minSum) {
-                minSum = arr[i];
+            if (arr[i] <= Sum2) {
+                Sum2 = arr[i];
             }
         }
-        System.out.print("Minimum expense in a day" + minSum + "rubles");
+        System.out.print("Minimum expense in a day" + Sum2 + "rubles");
 
 
         float averageSum = 0;
@@ -49,13 +49,12 @@ public class Main {
             averageSum = sum / arr.length;
         }
         System.out.println("averageSum expense in a month" + averageSum + "rubles");
-        System.out.println();
 
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i =  reverseFullName.length -1; i>=0; i--) {
-        System.out.print(reverseFullName[i]);
-        System.out.println();}}}
+        System.out.print(reverseFullName[i]);}}}
+
 
 
 
